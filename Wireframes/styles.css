@@ -1,0 +1,260 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .desktop {
+      width: 100%; max-width: 1280px;
+      background: #fff;
+      border: 2px solid #999;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 2px solid #ccc;
+      background: #f8f8f8;
+      height: 64px;
+    }
+    .logo {
+      width: 140px;
+      height: 36px;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #666;
+      font-weight: bold;
+    }
+    .main-nav {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .main-nav li {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    .main-nav li.active {
+      border-bottom: 2px solid #333;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .search-box {
+      width: 220px;
+      height: 34px;
+      border: 2px solid #999;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      color: #888;
+      font-size: 13px;
+      background: #fff;
+    }
+    .account {
+      width: 90px;
+      height: 34px;
+      border: 2px solid #999;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    /* Hero / Search Section */
+    .hero {
+      padding: 40px 40px 32px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #222;
+    }
+    .hero-sub {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .big-search {
+      width: 560px;
+      height: 48px;
+      border: 2px solid #999;
+      border-radius: 6px;
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      color: #888;
+      font-size: 15px;
+      background: #fafafa;
+    }
+    .search-hint {
+      font-size: 12px;
+      color: #777;
+    }
+    /* Quick Paths */
+    .section {
+      padding: 28px 40px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #222;
+      border-left: 4px solid #999;
+      padding-left: 10px;
+    }
+    .card-row {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      flex: 1;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      padding: 0;
+      background: #fafafa;
+      min-height: 140px;
+    }
+    .card-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.4;
+    }
+    /* Featured Math */
+    .math-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .topic-box {
+      flex: 1;
+      border: 2px dashed #bbb;
+      border-radius: 4px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      color: #444;
+    }
+    .topic-box span {
+      font-size: 11px;
+      font-weight: normal;
+      color: #777;
+      margin-top: 4px;
+    }
+    /* Progress Teaser */
+    .progress-teaser {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      padding: 20px 24px;
+      background: #f8f8f8;
+    }
+    .progress-bar-placeholder {
+      width: 200px;
+      height: 16px;
+      border: 2px solid #999;
+      border-radius: 8px;
+      background: #eee;
+      position: relative;
+    }
+    .progress-bar-placeholder::after {
+      content: "";
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 60%;
+      background: #bbb;
+      border-radius: 6px;
+    }
+    .progress-text {
+      flex: 1;
+      font-size: 13px;
+      color: #444;
+    }
+    .btn-outline {
+      width: 120px;
+      height: 36px;
+      border: 2px solid #999;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    /* Footer */
+    .footer {
+      border-top: 2px solid #ccc;
+      padding: 20px 40px;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #666;
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .annotation {
+      position: absolute;
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      padding: 4px 8px;
+      font-size: 11px;
+      color: #856404;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .page-label {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
